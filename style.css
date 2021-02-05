@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto';
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #2193b0;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.to-do-list-container {
+  width: 85%;
+}
+
+/*----------------------------------------- Header*/
+.header {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: #f9f9f9;
+}
+
+.header h1 {
+  border-bottom: 2px solid #313639 ;
+}
+
+/*----------------------------------------- Input Section*/
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.input-section input::placeholder {
+  color: #f9f9f9;
+}
+
+.list-input {
+  background: transparent;
+  border: none;
+  height: 2rem;
+  width: 90%;
+  padding: 0px 20px;
+  font-size: 1rem;
+  color: #f9f9f9;
+  border-bottom: 2px solid #313639 ;
+}
+
+.list-input:focus {
+  outline: none;
+}
+
+.add-item .fas {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #2ECC40;
+  color:#f9f9f9;
+}
+
+/*----------------------------------------- ToDo List Section*/
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  overflow: auto;
+  color: #f9f9f9;
+  box-shadow: 0px 5px 10px rgb(0,0,0,0.55);
+  background-color: #6dd5ed;
+}
+
+.todo-list li span {
+  padding-left: 10px;
+}
+
+.delete {
+  color: #ff0047;
+  cursor: pointer;
+}
+
+/*----------------------------------------- Media Queries*/
+@media (min-width: 768px) {
+  .to-do-list-container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .to-do-list-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .to-do-list-container {
+    width: 40%;
+  }
+}
